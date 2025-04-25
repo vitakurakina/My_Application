@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="schedule">Расписание</string>
+    <string name="notes">Заметки</string>
+    <string name="osu_logo">Лого ОГУ</string>
+    <string name="osu_name">ОГУ имени И.С. Тургенева</string>
+    <string name="show_schedule">Показать\nрасписание</string>
+    <string name="open_notes">Открыть\nзаметки</string>
+    <string name="hi_student">Привет, студент!</string>
+    <string name="nav_schedule_desc">Перейти к расписанию</string>
+    <string name="nav_notes_desc">Перейти к заметкам</string>
+    <string name="nav_osu_logo_desc">Логотип ОГУ</string>
+
 </resources>
