@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activity_notes"
@@ -9,9 +7,11 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
+    <!--Верхний контейнер-->
     <RelativeLayout
+        android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@android:color/white">
 
         <!-- Верхний контейнер -->
@@ -54,25 +54,43 @@
             android:layout_height="2dp"
             android:layout_below="@id/top_container"
             android:background="@color/darkblue" />
-    </RelativeLayout>
 
-    <LinearLayout
+
+    </RelativeLayout>
+    <!-- Список заметок -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notesRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/header"
+        android:layout_above="@id/footer"
+        android:layout_marginTop="10dp" />
+
+    <!--Середина-->
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center"
-        >
-        <TextView
+        android:layout_below="@id/header"
+        android:layout_above="@id/footer"
+        android:gravity="bottom"
+        android:layout_margin="20dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="NOTES"
-            />
-
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:contentDescription="@string/add_note"
+            app:backgroundTint="@color/darkblue"
+            android:src="@drawable/ic_plus" />
     </LinearLayout>
 
-    <!-- Нижняя панель навигации с чёрной полосой -->
+    <!--Нижний контейнер-->
     <LinearLayout
-        android:id="@+id/bottom_navigation_container"
+        android:id="@+id/footer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"

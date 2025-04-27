@@ -6,8 +6,6 @@ import android.widget.Button
 import android.widget.ImageButton
 import androidx.activity.ComponentActivity
 
-//import com.example.myapplication.ui.theme.screens.MainScreen
-
 class MainActivity : ComponentActivity(){
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)

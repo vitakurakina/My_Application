@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">OSU</string>
     <string name="schedule">Расписание</string>
     <string name="notes">Заметки</string>
     <string name="osu_logo">Лого ОГУ</string>
@@ -11,5 +11,6 @@
     <string name="nav_notes_desc">Перейти к заметкам</string>
     <string name="nav_osu_logo_desc">Логотип ОГУ</string>
     <string name="plus">Плюс</string>
+    <string name="add_note">Добоавить заметку</string>
 
 </resources>
