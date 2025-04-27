@@ -10,5 +10,6 @@
     <string name="nav_schedule_desc">Перейти к расписанию</string>
     <string name="nav_notes_desc">Перейти к заметкам</string>
     <string name="nav_osu_logo_desc">Логотип ОГУ</string>
+    <string name="plus">Плюс</string>
 
 </resources>
