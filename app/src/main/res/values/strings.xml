@@ -11,6 +11,7 @@
     <string name="nav_notes_desc">Перейти к заметкам</string>
     <string name="nav_osu_logo_desc">Логотип ОГУ</string>
     <string name="plus">Плюс</string>
-    <string name="add_note">Добоавить заметку</string>
-
+    <string name="add_note">Добавить заметку</string>
+    <string name="back_button">Кнопка назад</string>
+    <string name="forward_button">Кнопка вперед</string>
 </resources>

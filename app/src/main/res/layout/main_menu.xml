@@ -96,49 +96,4 @@
             android:backgroundTint="@color/darkblue"/>
     </LinearLayout>
 
-    <!-- Нижняя панель навигации с чёрной полосой -->
-    <LinearLayout
-        android:id="@+id/bottom_navigation_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_alignParentBottom="true">
-
-        <!-- Полоса сверху -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@color/darkblue" />
-
-        <!-- Кнопки навигации -->
-        <LinearLayout
-            android:id="@+id/bottom_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:orientation="horizontal"
-            android:gravity="center">
-
-            <!-- Кнопка "Расписание" -->
-            <ImageButton
-                android:id="@+id/nav_schedule"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/ic_schedule"
-                android:contentDescription="@string/schedule"
-                android:background="?android:attr/selectableItemBackground"/>
-
-            <!-- Кнопка "Заметки" -->
-            <ImageButton
-                android:id="@+id/nav_notes"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/ic_notes"
-                android:contentDescription="@string/notes"
-                android:background="?android:attr/selectableItemBackground"/>
-        </LinearLayout>
-    </LinearLayout>
-
-
 </RelativeLayout>

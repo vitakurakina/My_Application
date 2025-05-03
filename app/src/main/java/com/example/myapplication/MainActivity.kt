@@ -14,9 +14,6 @@ class MainActivity : ComponentActivity(){
         val scheduleButton = findViewById<Button>(R.id.button)
         val notesButton = findViewById<Button>(R.id.button2)
 
-        val scheduleNavButton = findViewById<ImageButton>(R.id.nav_schedule)
-        val notesNavButton = findViewById<ImageButton>(R.id.nav_notes)
-
         scheduleButton.setOnClickListener {
             val intent = Intent(this, Schedule_activity::class.java)
             startActivity(intent)
@@ -25,17 +22,6 @@ class MainActivity : ComponentActivity(){
             val intent = Intent(this, Notes_Activity::class.java)
             startActivity(intent)
         }
-
-        scheduleNavButton.setOnClickListener {
-            val intent = Intent(this, Schedule_activity::class.java)
-            startActivity(intent)
-        }
-
-        notesNavButton.setOnClickListener {
-            val intent = Intent(this, Notes_Activity::class.java)
-            startActivity(intent)
-        }
-
 
     }
 }
