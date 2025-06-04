@@ -23,14 +23,18 @@ class Schedule_activity : ComponentActivity() {
         }
         val osulogoButton = findViewById<ImageButton>(R.id.nav_osu_logo)
         val notesNavButton = findViewById<ImageButton>(R.id.nav_notes)
+        val chatNavButton = findViewById<ImageButton>(R.id.nav_chat)
 
+        osulogoButton.setOnClickListener{
+            val intent = Intent (this, MainActivity::class.java)
+            startActivity(intent)
+        }
         notesNavButton.setOnClickListener {
             val intent = Intent(this, Notes_Activity::class.java)
             startActivity(intent)
         }
-
-        osulogoButton.setOnClickListener{
-            val intent = Intent (this, MainActivity::class.java)
+        chatNavButton.setOnClickListener {
+            val intent = Intent(this, ChatActivity::class.java)
             startActivity(intent)
         }
         val webView = findViewById<WebView>(R.id.webview_schedule)

@@ -37,6 +37,7 @@ class Notes_Activity : ComponentActivity() {
 
         val osulogoButton = findViewById<ImageButton>(R.id.nav_osu_logo)
         val scheduleNavButton = findViewById<ImageButton>(R.id.nav_schedule)
+        val chatNavButton = findViewById<ImageButton>(R.id.nav_chat)
         val floatingActionButton = findViewById<com.google.android.material.floatingactionbutton.FloatingActionButton>(R.id.floatingActionButton)
 
         val recyclerView: RecyclerView = findViewById(R.id.notesRecyclerView)
@@ -47,7 +48,6 @@ class Notes_Activity : ComponentActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapter
 
-        // Загружаем заметки из памяти
         loadNotes()
 
         scheduleNavButton.setOnClickListener {
@@ -57,6 +57,10 @@ class Notes_Activity : ComponentActivity() {
 
         osulogoButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+        chatNavButton.setOnClickListener {
+            val intent = Intent(this, ChatActivity::class.java)
             startActivity(intent)
         }
 

@@ -129,6 +129,15 @@
                 android:src="@drawable/ic_notes"
                 android:contentDescription="@string/notes"
                 android:background="?android:attr/selectableItemBackground"/>
+
+            <ImageButton
+                android:id="@+id/nav_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/message"
+                android:contentDescription="@string/Chat"
+                android:background="?android:attr/selectableItemBackground"/>
         </LinearLayout>
     </LinearLayout>
 

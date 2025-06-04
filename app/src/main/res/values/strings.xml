@@ -14,4 +14,6 @@
     <string name="add_note">Добавить заметку</string>
     <string name="back_button">Кнопка назад</string>
     <string name="forward_button">Кнопка вперед</string>
+    <string name="open_chat">Открыть чат</string>
+    <string name="Chat">Открыть чат</string>
 </resources>
