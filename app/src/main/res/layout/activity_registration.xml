@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <!-- Верхний контейнер -->
+        <LinearLayout
+            android:id="@+id/top_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_vertical">
+
+            <!-- Логотип слева -->
+            <ImageButton
+                android:id="@+id/nav_osu_logo"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@string/osu_logo"
+                android:src="@drawable/ic_osu_logo" />
+
+            <!-- Текст справа -->
+            <TextView
+                android:id="@+id/osu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/osu_name"
+                android:textColor="@color/darkblue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Полоса снизу -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/top_container"
+            android:background="@color/darkblue" />
+    </RelativeLayout>
+
+
+
+    <!-- Середина -->
+    <LinearLayout
+        android:id="@+id/buttons_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/loginEditText"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:hint="Login"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="8dp"
+            android:hint="Пароль"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/confirmPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="8dp"
+            android:hint="Подтвердите пароль"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/registrationButton"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/darkblue"
+            android:text="Зарегистрироваться"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

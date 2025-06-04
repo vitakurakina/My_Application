@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "114317886326",
+    "firebase_url": "https://my-application-aeef5-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "my-application-aeef5",
+    "storage_bucket": "my-application-aeef5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114317886326:android:b2020c9f99dc7c51fb3057",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPCIX5HY89mbgZi6jkd2vKvebUhgYNzQQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
